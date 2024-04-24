@@ -1,0 +1,21 @@
+// base
+@import "styles/base/layout";
+@import "styles/base/scroll";
+
+// helpers
+@import "styles/helpers/vars";
+@import "styles/helpers/reset";
+@import "styles/helpers/mixins";
+
+// shared
+@import "shared/ui/Sidebar/Sidebar.scss";
+@import "shared/ui/Header/Header.scss";
+
+// ui
+@import "shared/ui/Film/film.scss";
+@import "shared/ui/Trend/Trend.scss";
+
+// pages
+@import "pages/home/Home.scss";
+@import "pages/favourites/Favourites.scss";
+@import "pages/trending/Trending.scss";

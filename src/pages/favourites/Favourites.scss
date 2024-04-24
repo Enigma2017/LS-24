@@ -1,0 +1,16 @@
+@import "/src/styles/helpers/_mixins.scss";
+
+.favourites{
+  margin-left: 25rem;
+}
+
+.favourites-list {
+  margin-top: 24rem;
+  display: flex;
+
+  gap: 32rem;
+  
+  
+}
+
+

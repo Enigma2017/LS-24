@@ -1,0 +1,108 @@
+@import "/src/styles/helpers/_mixins.scss";
+.trend {
+  padding-top: 56rem;
+  display: flex;
+  align-items: center;
+  gap: 24rem;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  &-img {
+    border: 1px solid var(--gray);
+    border-radius: 20rem;
+    min-width: 534rem;
+    min-height: 431rem;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+   @include mobile {
+    width: 100%; /* Ширина зображення на мобільних (розтягується на всю ширину) */
+    height: 215px; /* Висота зображення на мобільних */
+    min-width: 267px; /* Мінімальна ширина зображення на мобільних */
+    min-height: 215px; 
+    }
+  }
+  &-info {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  &-title {
+    font-weight: 600;
+    font-size: 32rem;
+    line-height: 125%;
+    margin-bottom: 12rem;
+    @include mobile {
+      font-size: 20rem;
+    }
+  }
+
+  &-group {
+    display: flex;
+    align-items: center;
+    gap: 36rem;
+
+    font-weight: 500;
+    font-size: 18rem;
+    line-height: 133%;
+    margin-bottom: 21rem;
+  }
+
+  &-description {
+    font-weight: 400;
+    font-size: 16rem;
+    line-height: 150%;
+    max-width: 533rem;
+    margin-bottom: 26rem;
+  }
+
+  &-watch {
+    display: flex;
+    align-items: center;
+    gap: 16rem;
+  }
+
+  &-btn {
+    font-weight: 500;
+    font-size: 16rem;
+    line-height: 125%;
+    color: var(--white);
+    padding: 17rem 24rem;
+    background: var(--purple);
+    border-radius: 14rem;
+  }
+
+  &-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54rem;
+    height: 54rem;
+    border-radius: 14rem;
+    padding: 15rem;
+    background: linear-gradient(
+      98.85deg,
+      #ffffff 3.36%,
+      rgba(255, 255, 255, 0) 238.16%
+    );
+    backdrop-filter: blur(5.92593px);
+  }
+
+  &-rating {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+    font-weight: 500;
+    font-size: 18rem;
+    line-height: 133%;
+    position: absolute;
+    right: 20rem;
+
+    @include mobile {
+      right: 10rem;
+    }
+  }
+}

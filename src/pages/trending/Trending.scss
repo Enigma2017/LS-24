@@ -1,0 +1,32 @@
+@import "/src/styles/helpers/_mixins.scss";
+.trending {
+  padding: 0 32rem 30rem 32rem;
+  &-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	margin-top: 16rem;
+	gap: 24rem;
+	@include mobile {
+		grid-template-columns: 1fr ;
+		justify-content: center;
+		align-items: center;
+	  }
+  }
+  
+
+  &-item {
+	transition: opacity 0.3s ease;
+	cursor: pointer;
+  }
+  
+  .active {
+	opacity: 1;
+   
+  }
+  
+  .inactive {
+	opacity: 0.3;
+  }
+}
+
+
